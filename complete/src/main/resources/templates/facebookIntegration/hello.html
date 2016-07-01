@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Hello Facebook</title>
+</head>
+<body>
+<!--
+    static final String[] PROFILE_FIELDS = {
+    "id", "about", "age_range", "bio", "birthday", "context", "cover", "currency", "devices", "education", "email",
+    "favorite_athletes", "favorite_teams", "first_name", "gender", "hometown", "inspirational_people", "installed", "install_type",
+    "is_verified", "languages", "last_name", "link", "locale", "location", "meeting_for", "middle_name", "name", "name_format",
+    "political", "quotes", "payment_pricepoints", "relationship_status", "religion", "security_settings", "significant_other",
+    "sports", "test_group", "timezone", "third_party_id", "updated_time", "verified", "video_upload_limits", "viewer_can_send_gift",
+    "website", "work"
+    };-->
+<h3>Hello, <span th:text="${facebookProfile.name}">Some User</span>!</h3>
+
+<h4>Here is your feed:</h4>
+
+<p>Your birthday is: <span th:text="${facebookProfile.birthday}">Some Bday</span> :)</p>
+
+<h3>Hello, <span th:text="${facebookProfile.gender}">Some User</span>!</h3>
+
+
+<div th:each="post:${feed}">
+    <b th:text="${post.from.name}">from</b> wrote:
+    <p th:text="${post.message}">message text</p>
+    <img th:if="${post.picture}" th:src="${post.picture}"/>
+    <hr/>
+</div>
+
+<div th:each="page:${likedPages}">
+    <b th:text="${page.description}">description</b> liked page:
+    <p th:text="${page.genre}">genre</p>
+    <img th:if="${page.picture}" th:src="${page.picture}"/>
+    <hr/>
+</div>
+</body>
+</html>
