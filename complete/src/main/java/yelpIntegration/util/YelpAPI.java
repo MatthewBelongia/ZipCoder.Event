@@ -137,7 +137,6 @@ public class YelpAPI {
         YelpAPI yelpApi = new YelpAPI(CONSUMER_KEY, CONSUMER_SECRET, TOKEN, TOKEN_SECRET);
         queryAPI(yelpApi, yelpApiCli);
 
-        //   yelpApi.run();
 
     }
 }
