@@ -35,6 +35,8 @@ public class Business {
     @Column(name = "IS_CLOSE")
     private String isClose;
 
+    @Column
+
     public Long getBusiness_id() {
         return business_id;
     }

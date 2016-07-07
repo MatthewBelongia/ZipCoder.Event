@@ -1,13 +1,7 @@
 package facebookIntegration.model;
-
+/*
 
 import javax.persistence.*;
-
-/**
- * Created by matthewb on 6/21/16.
- */
-
-
 
 @Entity
 @Table(name = "users")
@@ -59,3 +53,4 @@ public class UserProfile {
 
 
 }
+*/

@@ -7,7 +7,9 @@ import org.springframework.web.bind.annotation.*;
 import yelpIntegration.domain.Business;
 import yelpIntegration.repo.BusinessRepo;
 
-@RestController
+import java.util.List;
+
+@RequestMapping
 public class BusinessCtrl {
 
     @Autowired
@@ -26,9 +28,23 @@ public class BusinessCtrl {
         return new ResponseEntity<>(null, HttpStatus.CREATED);
     }
 
-    @RequestMapping(value = "/business/{businessId}", method = RequestMethod.DELETE)
-    public ResponseEntity<?> deleteBusiness(@PathVariable Business businessId){
-        businessRepo.delete(businessId);
-        return new ResponseEntity<>(HttpStatus.OK);
-    }
+
+
 }
+//
+//    @Autowired
+//    BusinessRepo businessRepo;
+//
+//
+//    @RequestMapping(value = "/business", method = RequestMethod.GET)
+//    public ResponseEntity<Iterable<Business>> getBusiness(){
+//        Iterable<Business> businesses = businessRepo.findAll();
+//        return new ResponseEntity<>(businesses, HttpStatus.OK);
+//    }
+//
+//
+//    @RequestMapping(value = "/business/{businessId}", method = RequestMethod.DELETE)
+//    public ResponseEntity<?> deleteBusiness(@PathVariable Business businessId){
+//        businessRepo.delete(businessId);
+//        return new ResponseEntity<>(HttpStatus.OK);
+//    }

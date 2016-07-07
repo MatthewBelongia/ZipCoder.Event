@@ -1,5 +1,5 @@
 package facebookIntegration.hello;
-
+/*
 import javax.inject.Inject;
 
 import facebookIntegration.model.UserProfile;
@@ -75,3 +75,4 @@ public class HelloController {
 
 
 }
+*/

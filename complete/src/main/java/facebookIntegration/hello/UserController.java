@@ -1,5 +1,5 @@
 package facebookIntegration.hello;
-
+/*
 import facebookIntegration.model.UserRepo;
 import facebookIntegration.model.UserProfile;
 import org.slf4j.Logger;
@@ -10,9 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- * Created by matthewb on 7/1/16.
- */
 @CrossOrigin
 @RestController
 public class UserController {
@@ -37,3 +34,4 @@ public class UserController {
         return userProfile;
     }
 }
+*/
